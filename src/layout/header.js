@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 // internal
 import Menus from "./menus";
-import logo from "@assets/img/logo/green.png";
+import logo from "@assets/img/logo/gr.png";
 import { Cart, Heart, Search, User } from "@svg/index";
 import useSticky from "@hooks/use-sticky";
 import CartSidebar from "@components/common/sidebar/cart-sidebar";
@@ -25,9 +25,8 @@ const Header = ({ style_2 = false }) => {
       <header>
         <div className={`header__area ${style_2 ? "" : "header__transparent"}`}>
           <div
-            className={`header__bottom-13 header__padding-7 header__black-3 header__bottom-border-4 ${
-              style_2 ? "header__bottom-13-white" : "grey-bg-17"
-            } header__sticky ${sticky ? "header-sticky" : ""}`}
+            className={`header__bottom-13 header__padding-7 header__black-3 header__bottom-border-4 ${style_2 ? "header__bottom-13-white" : "grey-bg-17"
+              } header__sticky ${sticky ? "header-sticky" : ""}`}
             id="header-sticky"
           >
             <div className="container-fluid">
@@ -36,9 +35,10 @@ const Header = ({ style_2 = false }) => {
                   <div className="col-xxl-1 col-xl-2 col-lg-4 col-md-4 col-sm-5 col-8">
                     <div className="logo">
                       <Link href="/">
-                        <Image src={logo} alt="logo" />
+                        <Image src={logo} alt="logo" width={150} height={150} />
                       </Link>
                     </div>
+
                   </div>
                   <div className="col-xxl-6 col-xl-7 d-none d-xl-block">
                     <div className="main-menu main-menu-13 pl-45 main-menu-ff-space">
@@ -49,9 +49,9 @@ const Header = ({ style_2 = false }) => {
                   </div>
                   <div className="col-xxl-5 col-xl-3 col-lg-8 col-md-8 col-sm-7 col-4">
                     <div className="header__bottom-right-13 d-flex justify-content-end align-items-center pl-30">
-                      <div className="header__search-13">
-                        <SearchForm/>
-                      </div>
+                      {/* <div className="header__search-13">
+                        <SearchForm />
+                      </div> */}
                       <div className="header__action-13 d-none d-md-block">
                         <ul>
                           <li className="d-xxl-none">
@@ -84,27 +84,27 @@ const Header = ({ style_2 = false }) => {
                             </li>
                           ) : (
                             <li>
-                              <Link href="/login">
+                              {/* <Link href="/login">
                                 <User />
-                              </Link>
+                              </Link> */}
                             </li>
                           )}
                           <li>
-                            <Link href="/wishlist">
+                            {/* <Link href="/wishlist">
                               <Heart />
                               <span className="tp-item-count">
                                 {wishlist.length}
                               </span>
-                            </Link>
+                            </Link> */}
                           </li>
                           <li>
-                            <button
+                            {/* <button
                               className="cartmini-open-btn"
                               onClick={() => setIsCartOpen(!isCartOpen)}
                             >
                               <Cart />
                               <span className="tp-item-count">{quantity}</span>
-                            </button>
+                            </button> */}
                           </li>
                         </ul>
                       </div>
@@ -141,5 +141,7 @@ const Header = ({ style_2 = false }) => {
     </>
   );
 };
+
+
 
 export default Header;

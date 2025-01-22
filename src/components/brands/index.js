@@ -151,6 +151,7 @@ import brand_22 from "@assets/img/brand/brand-22.png";
 import brand_23 from "@assets/img/brand/brand-23.png";
 import brand_24 from "@assets/img/brand/brand-24.png";
 import brand_25 from "@assets/img/brand/brand-25.png";
+import brand_26 from "@assets/img/brand/brand-26.png";
 // slider settings
 const settings_1 = {
   speed: 4000,
@@ -190,6 +191,7 @@ const brand_1_data = [
   { brand: brand_23 },
   { brand: brand_24 },
   { brand: brand_25 },
+  { brand: brand_26 },
 ];
 
 const brand_2_data = [
@@ -201,6 +203,7 @@ const brand_2_data = [
   { brand: brand_22 },
   { brand: brand_23 },
   { brand: brand_24 },
+  { brand: brand_26 },
 ];
 
 const Brands = () => {

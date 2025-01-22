@@ -105,7 +105,7 @@ const FaqArea = ({ element_faq = false }) => {
                   {
                     title: (
                       <>
-                        Orders <br />& Shipping
+                      
                       </>
                     ),
                     accordions: [
@@ -139,7 +139,7 @@ const FaqArea = ({ element_faq = false }) => {
                   {
                     title: (
                       <>
-                        Returns <br />& Exchanges
+                  
                       </>
                     ),
                     accordions: [
@@ -166,7 +166,7 @@ const FaqArea = ({ element_faq = false }) => {
                     ],
                   },
                   {
-                    title: "Discounts",
+                    title: "",
                     accordions: [
                       {
                         id: "eight",
@@ -200,7 +200,7 @@ const FaqArea = ({ element_faq = false }) => {
                   {
                     title: (
                       <>
-                        Returns <br />& Exchanges
+                   
                       </>
                     ),
                     accordions: [
@@ -239,7 +239,7 @@ const FaqArea = ({ element_faq = false }) => {
                 id="support"
                 accordion_items={[
                   {
-                    title: "Discounts",
+                    title: "",
                     accordions: [
                       {
                         id: "fifteen",

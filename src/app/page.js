@@ -10,6 +10,7 @@ import ShopBanner from "@components/shop-banner";
 import ShopFeature from "@components/shop-feature";
 import ShopCta from "@components/cta";
 import Footer from "@layout/footer";
+import Brands from "@components/brands";
 
 export const metadata = {
   title: "Home - Harri Shop"
@@ -20,12 +21,10 @@ const HomeShop = () => {
     <Wrapper>
       <Header />
       <HeroBanner />
-      <ShopCategoryArea />
-      <ShopProducts />
       <OfferPopularProduct />
-      <ShopBanner />
       <ShopFeature />
       <ShopCta />
+      <Brands />
       <Footer />
     </Wrapper>
   );

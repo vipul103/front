@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 // internal
-import logo from '@assets/img/logo/green.png';
+import logo from '@assets/img/logo/wcs.png';
 import payment from '@assets/img/footer/footer-payment.png';
 import SocialLinks from "@components/social";
 import CopyrightText from "./copyright-text";

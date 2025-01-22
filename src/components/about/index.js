@@ -15,7 +15,7 @@ const About = () => {
         subtitle="About us"
         title={
           <>
-            Welcome to  <br /> Green Energy Power Co
+            Welcome to  <br /> WE CAN SAVE
           </>
         }
       />
